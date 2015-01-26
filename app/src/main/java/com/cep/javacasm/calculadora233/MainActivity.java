@@ -31,7 +31,11 @@ public class MainActivity extends ActionBarActivity {
 
         // Obtenemos la referencia a la caja de texto
         View vResultado=findViewById(R.id.tvResultado);
-        tvResultado=(TextView)vResultado;
+        if(vResultado==null) {
+            Toast.makeText(this,R.string.error,Toast.LENGTH_LONG).show();
+        }
+        else  {
+        tvResultado=(TextView)vResultado; }
     }
 
     // Realiza las tareas de borrado completo
