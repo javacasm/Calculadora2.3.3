@@ -1,0 +1,235 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout"
+        android:layout_below="@+id/tvResultado"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="39dp"
+        android:layout_marginEnd="39dp">
+
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_gravity="bottom">
+
+            <Button
+                android:id="@+id/b7"
+                style="@style/botonland.weight1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pulsacion"
+                android:text="@string/b7" />
+
+
+            <Button
+                android:id="@+id/b8"
+                style="@style/botonland.weight1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pulsacion"
+                android:text="@string/b8" />
+
+            <Button
+                android:id="@+id/b9"
+                style="@style/botonland.weight1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pulsacion"
+                android:text="@string/b9" />
+
+            <Button
+                android:id="@+id/bSuma"
+                style="@style/botonland.weight1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pulsacionOperador"
+                android:text="@string/bmas" />
+
+            <Button
+                android:id="@+id/bC"
+                style="@style/botonland.rojo"
+                android:onClick="pulsacionCE"
+                android:text="@string/bc"
+                android:typeface="monospace" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp" >
+
+            <Button
+                android:id="@+id/b4"
+                style="@style/botonland.weight1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pulsacion"
+                android:text="@string/b4" />
+
+            <Button
+                android:id="@+id/b5"
+                style="@style/botonland.weight1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pulsacion"
+                android:text="@string/b5" />
+
+            <Button
+                android:id="@+id/b6"
+                style="@style/botonland.weight1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pulsacion"
+                android:text="@string/b6" />
+
+            <Button
+                android:id="@+id/bResta"
+                style="@style/botonland.weight1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pulsacionOperador"
+                android:text="@string/bmenos" />
+
+            <Button
+                style="@style/botonland.rojo"
+                android:id="@+id/bac"
+                android:onClick="pulsacionAC"
+                android:text="@string/bac"
+                android:typeface="monospace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp" >
+
+            <Button
+                android:id="@+id/b1"
+                style="@style/botonland.weight1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pulsacion"
+                android:text="@string/b1" />
+
+            <Button
+                android:id="@+id/b2"
+                style="@style/botonland.weight1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pulsacion"
+                android:text="@string/b2" />
+
+            <Button
+                android:id="@+id/b3"
+                style="@style/botonland.weight1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pulsacion"
+                android:text="@string/b3" />
+
+            <Button
+                android:id="@+id/bMultiplicacion"
+                style="@style/botonland.weight1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pulsacionOperador"
+                android:text="@string/bpor" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp" >
+
+            <Button
+                android:id="@+id/b0"
+                style="@style/botonland.weight1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="pulsacion"
+                android:text="@string/b0" />
+
+            <Button
+                android:id="@+id/bPunto"
+                style="@style/botonland.weight1"
+                android:onClick="teclaPunto"
+                android:text="@string/bpunto"
+                android:layout_weight="1" />
+
+            <Button
+                style="@style/botonland.weight1"
+                android:id="@+id/bPorcent"
+                android:onClick="pulsacionOperador"
+                android:text="@string/bPorcent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/bDivision"
+                style="@style/botonland.weight1"
+                android:onClick="pulsacionOperador"
+                android:text="@string/bdivido"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/bIgual"
+                style="@style/botonland.weight1"
+                android:onClick="pulsacionIgual"
+                android:text="@string/bigual" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp" >
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/valorInicialCajaDeTexto"
+        android:id="@+id/tvResultado"
+        android:textSize="45dp"
+        android:background="#ffadbbcf"
+        android:textAlignment="gravity"
+        android:enabled="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/tableLayout"
+        android:layout_alignStart="@+id/tableLayout"
+        android:layout_marginLeft="194dp"
+        android:layout_marginStart="194dp"
+        android:layout_marginTop="25dp"
+        android:layout_alignRight="@+id/tableLayout"
+        android:layout_alignEnd="@+id/tableLayout" />
+
+</RelativeLayout>
