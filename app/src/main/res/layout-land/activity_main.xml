@@ -7,26 +7,23 @@
 
 
     <TableLayout
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tableLayout"
         android:layout_below="@+id/tvResultado"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="39dp"
-        android:layout_marginEnd="39dp">
+        android:layout_alignParentEnd="true">
 
 
         <TableRow
             android:id="@+id/tableRow1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_margin="3dp"
             android:layout_gravity="bottom">
 
             <Button
                 android:id="@+id/b7"
-                style="@style/botonland.weight1"
+                style="@style/botonland"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="pulsacion"
@@ -35,7 +32,7 @@
 
             <Button
                 android:id="@+id/b8"
-                style="@style/botonland.weight1"
+                style="@style/botonland"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="pulsacion"
@@ -43,7 +40,7 @@
 
             <Button
                 android:id="@+id/b9"
-                style="@style/botonland.weight1"
+                style="@style/botonland"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="pulsacion"
@@ -51,7 +48,7 @@
 
             <Button
                 android:id="@+id/bSuma"
-                style="@style/botonland.weight1"
+                style="@style/botonland"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="pulsacionOperador"
@@ -70,12 +67,11 @@
         <TableRow
             android:id="@+id/tableRow2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="3dp" >
+            android:layout_height="wrap_content">
 
             <Button
                 android:id="@+id/b4"
-                style="@style/botonland.weight1"
+                style="@style/botonland"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="pulsacion"
@@ -83,7 +79,7 @@
 
             <Button
                 android:id="@+id/b5"
-                style="@style/botonland.weight1"
+                style="@style/botonland"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="pulsacion"
@@ -91,7 +87,7 @@
 
             <Button
                 android:id="@+id/b6"
-                style="@style/botonland.weight1"
+                style="@style/botonland"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="pulsacion"
@@ -99,7 +95,7 @@
 
             <Button
                 android:id="@+id/bResta"
-                style="@style/botonland.weight1"
+                style="@style/botonland"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="pulsacionOperador"
@@ -120,8 +116,7 @@
         <TableRow
             android:id="@+id/tableRow3"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="3dp" >
+            android:layout_height="wrap_content">
 
             <Button
                 android:id="@+id/b1"
@@ -148,23 +143,6 @@
                 android:text="@string/b3" />
 
             <Button
-                android:id="@+id/bMultiplicacion"
-                style="@style/botonland.weight1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="pulsacionOperador"
-                android:text="@string/bpor" />
-
-        </TableRow>
-
-
-        <TableRow
-            android:id="@+id/tableRow4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="3dp" >
-
-            <Button
                 android:id="@+id/b0"
                 style="@style/botonland.weight1"
                 android:layout_width="wrap_content"
@@ -181,21 +159,6 @@
                 android:layout_weight="1" />
 
             <Button
-                style="@style/botonland.weight1"
-                android:id="@+id/bPorcent"
-                android:onClick="pulsacionOperador"
-                android:text="@string/bPorcent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <Button
-                android:id="@+id/bDivision"
-                style="@style/botonland.weight1"
-                android:onClick="pulsacionOperador"
-                android:text="@string/bdivido"
-                android:layout_weight="1" />
-
-            <Button
                 android:id="@+id/bIgual"
                 style="@style/botonland.weight1"
                 android:onClick="pulsacionIgual"
@@ -205,10 +168,32 @@
 
 
         <TableRow
-            android:id="@+id/tableRow5"
+            android:id="@+id/tableRow4"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="3dp" >
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/bMultiplicacion"
+                style="@style/botonland.weight1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pulsacionOperador"
+                android:text="@string/bpor" />
+
+            <Button
+                android:id="@+id/bDivision"
+                style="@style/botonland.weight1"
+                android:onClick="pulsacionOperador"
+                android:text="@string/bdivido"
+                android:layout_weight="1" />
+
+            <Button
+                style="@style/botonland.weight1"
+                android:id="@+id/bPorcent"
+                android:onClick="pulsacionOperador"
+                android:text="@string/bPorcent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
         </TableRow>
 
@@ -219,16 +204,15 @@
         android:layout_height="wrap_content"
         android:text="@string/valorInicialCajaDeTexto"
         android:id="@+id/tvResultado"
-        android:textSize="45dp"
+        android:textSize="25dp"
         android:background="#ffadbbcf"
-        android:textAlignment="gravity"
+        android:textAlignment="textEnd"
         android:enabled="false"
         android:layout_alignParentTop="true"
         android:layout_alignLeft="@+id/tableLayout"
         android:layout_alignStart="@+id/tableLayout"
         android:layout_marginLeft="194dp"
         android:layout_marginStart="194dp"
-        android:layout_marginTop="25dp"
         android:layout_alignRight="@+id/tableLayout"
         android:layout_alignEnd="@+id/tableLayout" />
 
