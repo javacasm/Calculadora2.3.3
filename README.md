@@ -1,6 +1,6 @@
 # Calculadora 2.3.3
 
-![calculadora](https://raw.githubusercontent.com/javacasm/temarioAndroid/master/App%20Caclculadora.png)
+![calculadora](https://raw.githubusercontent.com/javacasm/Android2016/master/temario/imagenes/AppCalculadora.png)
 
 Ejemplo de calculadora sencilla realizada en Android
 
